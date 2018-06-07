@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/form.css" />
+    <title>SoftUni Beers</title>
+</head>
+
+<body>
+    <nav>
+        <div class="topnav">
+            <a class="logo" href="index.html"><img src="images/logo.png" /></a>
+            <a href="index.html">Home</a>
+            <a href="all-beers.html">See All Beers</a>
+            <a class="active" href="order.html">Order a Beer</a>
+            <a class="right " href="register.html">Register</a>
+            <a class="right" href="login.html">Log in</a>
+        </div>
+    </nav>
+
+    <main>
+        <center>
+            <h1>Order a Beer</h1><br />
+                                 <form>
+                                     <label for="brand">Brand</label>
+                                     <select name="brand">
+                                         <option selected disabled>Select a brand</option>
+                                         <option value="1">Corona Extra 330ml</option>
+                                         <option value="2">Stella Artois 500ml</option>
+                                         <option value="3">Carlsberg 330ml</option>
+                                         <option value="4">Heineken 330ml</option>
+                                     </select>
+                                     <label for="quantity">Quantity</label>
+                                     <input placeholder="Enter amount of beerrs (1-15)" type="number" name="quantity" min="1" max="15" />
+                                     <label for="destination">Destination</label>
+                                     <select name="destination">
+                                         <option selected disabled>Select a destination</option>
+                                         <option>Sofia store</option>
+                                         <option>Plovdiv store</option>
+                                         <option>Ruse store</option>
+                                         <option>Varna store</option>
+                                     </select>
+                                     <!-- <input placeholder="Select a destination" type="text" name="email" />-->
+                                     <label for="dirthday">Enter your birthdate</label>
+                                     <input placeholder="mm/dd/yyyy" type="date" name="dirthday" />
+                                     <label for="opinion">Got a opinion, comment, recommendation? Share it with us!</label>
+                                     <input placeholder="Share your opinion with us!" type="text" name="opinion" />
+                                     <input type="submit" value="Order" />
+                                 </form>
+        </center>
+    </main>
+
+    <footer>
+        <hr /> <!--за една линия-->
+        <p><em>&copy; 2017 &ndash; SoftUni Beers</em></p>
+    </footer>
+</body>
+</html>
